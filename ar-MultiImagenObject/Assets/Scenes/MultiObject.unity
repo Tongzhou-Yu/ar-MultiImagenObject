@@ -312,6 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AttemptUpdate: 1
   m_MatchFrameRate: 1
+  m_TrackingMode: 2
 --- !u!4 &250253068
 Transform:
   m_ObjectHideFlags: 0
@@ -504,7 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PlacedPrefab: {fileID: 0}
-  maxPrefabSpawnCount: 10
+  maxPrefabSpawnCount: 1
 --- !u!114 &316495862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_RaycastPrefab: {fileID: 0}
 --- !u!1 &448782754
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +532,7 @@ GameObject:
   - component: {fileID: 448782757}
   - component: {fileID: 448782756}
   m_Layer: 5
-  m_Name: ButtonCircle
+  m_Name: ButtonSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -554,7 +556,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -703, y: 109}
-  m_SizeDelta: {x: 160, y: 73.2}
+  m_SizeDelta: {x: 160, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &448782756
 MonoBehaviour:
@@ -604,7 +606,7 @@ MonoBehaviour:
         m_MethodName: set_placedPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3977075565117097769, guid: 0c5031a65aa74a145bfb06aa1bd243c7,
+          m_ObjectArgument: {fileID: 1154854036131590407, guid: e5ef090d87d3bca4ca6fc662cf4394a9,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -632,7 +634,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b6a13008a20dbf0458165051c3636116, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -687,7 +689,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -392, y: 109}
-  m_SizeDelta: {x: 160, y: 73.2}
+  m_SizeDelta: {x: 160, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &682656549
 MonoBehaviour:
@@ -764,7 +766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b6a13008a20dbf0458165051c3636116, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -795,7 +797,7 @@ GameObject:
   - component: {fileID: 700378459}
   - component: {fileID: 700378458}
   m_Layer: 5
-  m_Name: ButtonRect
+  m_Name: ButtonCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -819,7 +821,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -939, y: 109}
-  m_SizeDelta: {x: 160, y: 73.2}
+  m_SizeDelta: {x: 160, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700378458
 MonoBehaviour:
@@ -869,7 +871,7 @@ MonoBehaviour:
         m_MethodName: set_placedPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 4117091343688070000, guid: 601cc9f0fedb8a84ca4d63d52335bf97,
+          m_ObjectArgument: {fileID: 5582183089082814016, guid: 60758353addb6f641b062f00af8cc626,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -897,7 +899,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b6a13008a20dbf0458165051c3636116, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1175,8 +1177,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusMode: 1
-  m_LightEstimationMode: 0
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
+  m_AutoFocus: 1
+  m_LightEstimation: 0
+  m_FacingDirection: 1
 --- !u!114 &1381131280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,7 +1446,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -165, y: 109}
-  m_SizeDelta: {x: 160, y: 73.2}
+  m_SizeDelta: {x: 160, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046826586
 MonoBehaviour:
@@ -1518,7 +1523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b6a13008a20dbf0458165051c3636116, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

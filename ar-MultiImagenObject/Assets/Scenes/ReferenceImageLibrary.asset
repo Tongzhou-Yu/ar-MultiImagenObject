@@ -19,29 +19,19 @@ MonoBehaviour:
       m_GuidLow: 4683943818579996451
       m_GuidHigh: 17723114027769107334
     m_SerializedTextureGuid:
-      m_GuidLow: 2662943702120438296
-      m_GuidHigh: 7564248844219234698
+      m_GuidLow: 12210386740666868382
+      m_GuidHigh: 15404289225695462090
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
-    m_Name: Circle
+    m_Name: Sphere
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5043403561000938543
       m_GuidHigh: 15357620672718447240
     m_SerializedTextureGuid:
-      m_GuidLow: 6585464793610365070
-      m_GuidHigh: 15844837605668075049
+      m_GuidLow: 1086765663544280661
+      m_GuidHigh: 6448323399450312891
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
-    m_Name: Rect
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5645395647194412295
-      m_GuidHigh: 9289209719314367119
-    m_SerializedTextureGuid:
-      m_GuidLow: 6373986571160352505
-      m_GuidHigh: 14661234075840339658
-    m_Size: {x: 0.20725389, y: 0.1}
-    m_SpecifySize: 1
-    m_Name: Error
+    m_Name: Cube
     m_Texture: {fileID: 0}
